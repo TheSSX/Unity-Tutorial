@@ -245,6 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CoinScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerControlla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AutoSave\ReadMe.txt" />
