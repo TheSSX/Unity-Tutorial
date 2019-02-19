@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CoinScript : MonoBehaviour {
 
+    public int score = 0;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,5 +19,8 @@ public class CoinScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("You collected a coin!");
+        Destroy(gameObject);
+        score++;
+        Debug.Log("Score is now " + score);
     }
 }
