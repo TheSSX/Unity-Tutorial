@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerControlla : MonoBehaviour {
 
     private float speed = 5;
-    public float jumpspeed = 5f;
+    public float jumpspeed = 7f;
     private float movement = 0f;
     private Rigidbody2D rigidbody;
     public Transform groundcheckpoint;

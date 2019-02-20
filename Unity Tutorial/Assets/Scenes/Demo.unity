@@ -355,8 +355,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675446063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 5.641546, y: 4.208525, z: 1}
+  m_LocalPosition: {x: 0.014, y: 0.029, z: 1}
+  m_LocalScale: {x: 5.9155836, y: 4.2337766, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 1208320905}
   - component: {fileID: 1208320904}
   - component: {fileID: 1208320908}
+  - component: {fileID: 1208320909}
   m_Layer: 0
   m_Name: ball
   m_TagString: Untagged
@@ -543,7 +544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208320903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.19, y: 2.29, z: -0.9452}
+  m_LocalPosition: {x: -8.13, y: 2.29, z: -0.9452}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.890395}
   m_Children:
   - {fileID: 163890887}
@@ -562,12 +563,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ae7c03fc58c3c4485c8318759e366e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpspeed: 5
+  jumpspeed: 7
   groundcheckpoint: {fileID: 163890887}
   groundcheckradius: 0.6
   groundlayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!95 &1208320909
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208320903}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47ff966ccaec7004283de171b1c93a6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1548339622
 GameObject:
   m_ObjectHideFlags: 0
