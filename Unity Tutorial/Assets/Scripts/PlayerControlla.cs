@@ -12,10 +12,12 @@ public class PlayerControlla : MonoBehaviour {
     public float groundcheckradius;
     public LayerMask groundlayer;
     private bool isTouchingGround;
+    private Animator playerAnimation;
 
     // Use this for initialization
     void Start () {
         rigidbody = GetComponent<Rigidbody2D>();
+        playerAnimation = GetComponent<Animator>();
 	}
 
     // Update is called once per frame
@@ -26,14 +28,24 @@ public class PlayerControlla : MonoBehaviour {
         isTouchingGround = Physics2D.OverlapCircle(groundcheckpoint.position, groundcheckradius, groundlayer);
         movement = Input.GetAxis("Horizontal");
 
-        if (movement > 0f || movement < 0f)
+        if (movement > 0f) 
         {
             rigidbody.velocity = new Vector2(movement * speed, rigidbody.velocity.y);
+            transform.localScale = new Vector2(0.1413f, 0.149f);    //make Mario point to the right
+        }
+        else if (movement < 0f)
+        {
+            rigidbody.velocity = new Vector2(movement * speed, rigidbody.velocity.y);
+            transform.localScale = new Vector2(-0.1413f, 0.149f);   //make Mario point to the left
         }
 
         if (Input.GetButtonDown("Jump") && isTouchingGround)
         {
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpspeed);
         }
+
+        //Animation code, changes the parameters in the Animator object
+        playerAnimation.SetFloat("Speed", Mathf.Abs(rigidbody.velocity.x));
+        playerAnimation.SetBool("OnGround", isTouchingGround);
     }
 }

@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 81282730}
   - component: {fileID: 81282729}
   - component: {fileID: 81282733}
+  - component: {fileID: 81282734}
   m_Layer: 0
   m_Name: mario
   m_TagString: Untagged
@@ -276,8 +277,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81282728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.48, y: -3.81, z: 0}
-  m_LocalScale: {x: 0.14130001, y: 0.149, z: 1}
+  m_LocalPosition: {x: -3.56, y: -1.96, z: 0}
+  m_LocalScale: {x: 0.1413, y: 0.149, z: 1}
   m_Children:
   - {fileID: 656057684}
   m_Father: {fileID: 0}
@@ -297,10 +298,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpspeed: 7
   groundcheckpoint: {fileID: 656057684}
-  groundcheckradius: 0.6
+  groundcheckradius: 0.05
   groundlayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!95 &81282734
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81282728}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9f4e3ff23d7fec4c96b622c67a16590, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &163890886
 GameObject:
   m_ObjectHideFlags: 0
