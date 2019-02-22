@@ -18,9 +18,12 @@ public class CoinScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("You collected a coin!");
-        Destroy(gameObject);
-        score++;
-        Debug.Log("Score is now " + score);
+        if (other.tag == "Player")
+        {
+            Debug.Log("You collected a coin!");
+            Destroy(gameObject);
+            score++;
+            Debug.Log("Score is now " + score);
+        }
     }
 }

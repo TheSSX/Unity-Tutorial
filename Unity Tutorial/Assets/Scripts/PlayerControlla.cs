@@ -13,11 +13,13 @@ public class PlayerControlla : MonoBehaviour {
     public LayerMask groundlayer;
     private bool isTouchingGround;
     private Animator playerAnimation;
+    public Vector3 respawnpoint;
 
     // Use this for initialization
     void Start () {
         rigidbody = GetComponent<Rigidbody2D>();
         playerAnimation = GetComponent<Animator>();
+        respawnpoint = transform.position;
 	}
 
     // Update is called once per frame
@@ -47,5 +49,18 @@ public class PlayerControlla : MonoBehaviour {
         //Animation code, changes the parameters in the Animator object
         playerAnimation.SetFloat("Speed", Mathf.Abs(rigidbody.velocity.x));
         playerAnimation.SetBool("OnGround", isTouchingGround);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "FallDetector")
+        {
+            transform.position = respawnpoint;
+        }
+
+        if (other.tag == "Checkpoint")
+        {
+            respawnpoint = other.transform.position;
+        }
     }
 }
