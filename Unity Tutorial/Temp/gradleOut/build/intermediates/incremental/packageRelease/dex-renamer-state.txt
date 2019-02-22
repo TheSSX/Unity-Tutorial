@@ -1,4 +1,0 @@
-#Fri Feb 22 13:52:58 GMT 2019
-base.0=U\:\\Unity\\Unity-Tutorial\\Unity Tutorial\\Temp\\gradleOut\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=U\:\\Unity\\Unity-Tutorial\\Unity Tutorial\\Temp\\gradleOut\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main\\classes.dex

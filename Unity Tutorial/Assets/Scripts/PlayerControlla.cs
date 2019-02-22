@@ -14,12 +14,14 @@ public class PlayerControlla : MonoBehaviour {
     private bool isTouchingGround;
     private Animator playerAnimation;
     public Vector3 respawnpoint;
+    public LevelManager gamelevelmanager;
 
     // Use this for initialization
     void Start () {
         rigidbody = GetComponent<Rigidbody2D>();
         playerAnimation = GetComponent<Animator>();
         respawnpoint = transform.position;
+        gamelevelmanager = FindObjectOfType<LevelManager>();
 	}
 
     // Update is called once per frame
@@ -55,7 +57,7 @@ public class PlayerControlla : MonoBehaviour {
     {
         if (other.tag == "FallDetector")
         {
-            transform.position = respawnpoint;
+            gamelevelmanager.respawn();
         }
 
         if (other.tag == "Checkpoint")

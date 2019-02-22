@@ -248,6 +248,7 @@
     <Compile Include="Assets\Scripts\CheckpointControlla.cs" />
     <Compile Include="Assets\Scripts\CoinScript.cs" />
     <Compile Include="Assets\Scripts\FallDetectorControlla.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\PlayerControlla.cs" />
   </ItemGroup>
   <ItemGroup>
