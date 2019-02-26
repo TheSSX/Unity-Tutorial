@@ -165,18 +165,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.019068718, y: -0.000000834465}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9, y: 9}
-    newSize: {x: 9, y: 9}
+    oldSize: {x: 4.5555553, y: 4.5555553}
+    newSize: {x: 22.755556, y: 22.755556}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 9}
+  m_Size: {x: 4.614353, y: 4.57621}
   m_EdgeRadius: 0
 --- !u!212 &81282731
 SpriteRenderer:
@@ -212,12 +212,12 @@ SpriteRenderer:
   m_SortingLayerID: 931255649
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 185c41e1d2299514fa3effd5bcda0bd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 091dca359459e0747a716f27900aa49b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9, y: 9}
+  m_Size: {x: 22.755556, y: 22.755556}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -229,8 +229,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81282728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.73, y: 1.93, z: 0}
-  m_LocalScale: {x: 0.1413, y: 0.149, z: 1}
+  m_LocalPosition: {x: -4.66, y: 1.44, z: 0}
+  m_LocalScale: {x: 0.149, y: 0.149, z: 1}
   m_Children:
   - {fileID: 656057684}
   m_Father: {fileID: 0}
@@ -432,7 +432,7 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -0.16000001, y: 0}
-  - {x: 0.16000001, y: 0}
+  - {x: 0.16201791, y: 0.0057204813}
 --- !u!1 &656057683
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +455,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 656057683}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18, y: -4.44, z: -0.9452}
+  m_LocalPosition: {x: 0.16, y: -2.25, z: -0.9452}
   m_LocalScale: {x: 0.2123142, y: 0.20134227, z: 0.8904}
   m_Children: []
   m_Father: {fileID: 81282732}
