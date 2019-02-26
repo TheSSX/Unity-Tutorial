@@ -5,3 +5,4 @@ Unity Tutorial/Temp/UnityLockfile
 *.lock
 *.ide-shm
 Unity Tutorial/.vs/Unity Tutorial/v15/Server/sqlite3/storage.ide-shm
+*.ide-shm

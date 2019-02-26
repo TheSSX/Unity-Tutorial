@@ -21,8 +21,8 @@ public class PlayerControlla : MonoBehaviour {
         rigidbody = GetComponent<Rigidbody2D>();
         playerAnimation = GetComponent<Animator>();
         respawnpoint = transform.position;
-        gamelevelmanager = FindObjectOfType<LevelManager>();
-	}
+        gamelevelmanager = GameObject.FindObjectOfType<LevelManager>(); ;//FindObjectOfType<LevelManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -57,7 +57,7 @@ public class PlayerControlla : MonoBehaviour {
     {
         if (other.tag == "FallDetector")
         {
-            gamelevelmanager.respawn();
+            gamelevelmanager.respawn();  
         }
 
         if (other.tag == "Checkpoint")

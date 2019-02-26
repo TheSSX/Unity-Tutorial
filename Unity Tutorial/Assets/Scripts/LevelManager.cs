@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour {
 
     public void respawn()
     {
+        Debug.Log("This got called");
         StartCoroutine("respawnCoroutine");
     }
 
