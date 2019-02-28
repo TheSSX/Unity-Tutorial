@@ -21,7 +21,7 @@ public class PlayerControlla : MonoBehaviour {
         rigidbody = GetComponent<Rigidbody2D>();
         playerAnimation = GetComponent<Animator>();
         respawnpoint = transform.position;
-        gamelevelmanager = GameObject.FindObjectOfType<LevelManager>(); ;//FindObjectOfType<LevelManager>();
+        gamelevelmanager = GameObject.FindObjectOfType<LevelManager>(); //FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame
@@ -35,12 +35,12 @@ public class PlayerControlla : MonoBehaviour {
         if (movement > 0f) 
         {
             rigidbody.velocity = new Vector2(movement * speed, rigidbody.velocity.y);
-            transform.localScale = new Vector2(0.1413f, 0.149f);    //make Mario point to the right
+            transform.localScale = new Vector2(0.8f, 0.8f);    //make Mario point to the right
         }
         else if (movement < 0f)
         {
             rigidbody.velocity = new Vector2(movement * speed, rigidbody.velocity.y);
-            transform.localScale = new Vector2(-0.1413f, 0.149f);   //make Mario point to the left
+            transform.localScale = new Vector2(-0.8f, 0.8f);   //make Mario point to the left
         }
 
         if (Input.GetButtonDown("Jump") && isTouchingGround)
